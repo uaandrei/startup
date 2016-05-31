@@ -23,9 +23,5 @@ namespace startup {
 			}
 			return allFinished;
 		}
-
-		void testmethod() {
-
-		}
 	}
 }
