@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<procs>
+  <proc id="chrome"
+        path="chrome"
+        args="&quot;http://pointeuse1:8089/open/login&quot; &quot;http://lu-s-kanban.dennemeyer.com:8080/login.do&quot; &quot;http://lu-s-iqbuild:8080/&quot; &quot;http://s-mattermost:8065/diams-iq/channels/town-square&quot;"
+        startAfter=""/>
+  <proc id="free commander"
+        path="C:\Program Files (x86)\FreeCommander XE\FreeCommander.exe"
+        args=""
+        startAfter=""/>
+  <proc id="update svn"
+        path="C:\Program Files\TortoiseSVN\bin\TortoiseProc.exe"
+        args="/command:update /path:&quot;F:\_work\dev\Product&quot;"
+        startAfter=""/>
+  <proc id="client"
+        path="F:\_work\dev\Product\Sources\Client\IAMS.iQ.Client.sln"
+        startAfter="update svn"/>
+  <proc id="server"
+        path="F:\_work\dev\Product\Sources\Server\IAMS.iQ.Server.sln"
+        startAfter="update svn"/>
+</procs>
